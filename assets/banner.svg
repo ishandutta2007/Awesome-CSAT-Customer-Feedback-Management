@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#080c14" />
+    </linearGradient>
+
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Filters for Glow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 42px;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 19px;
+      fill: #94a3b8;
+    }
+    .badge-text {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #e2e8f0;
+    }
+    .metric-val {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      fill: #f8fafc;
+    }
+    .metric-lbl {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 11px;
+      fill: #64748b;
+    }
+
+    /* Subtle background animations (placed strictly behind foreground elements) */
+    @keyframes pulseOrb1 {
+      0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.35; }
+      50% { transform: translate(30px, 20px) scale(1.15); opacity: 0.6; }
+    }
+    @keyframes pulseOrb2 {
+      0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.25; }
+      50% { transform: translate(-25px, -15px) scale(1.2); opacity: 0.5; }
+    }
+    @keyframes pulseOrb3 {
+      0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.3; }
+      50% { transform: translate(20px, -20px) scale(1.1); opacity: 0.55; }
+    }
+    @keyframes dashLine {
+      to { stroke-dashoffset: -40; }
+    }
+    @keyframes barGrow {
+      0%, 100% { height: 26px; y: 44px; }
+      50% { height: 40px; y: 30px; }
+    }
+    @keyframes barGrow2 {
+      0%, 100% { height: 46px; y: 24px; }
+      50% { height: 32px; y: 38px; }
+    }
+
+    .orb-1 { animation: pulseOrb1 8s ease-in-out infinite; transform-origin: 200px 100px; }
+    .orb-2 { animation: pulseOrb2 10s ease-in-out infinite; transform-origin: 1000px 300px; }
+    .orb-3 { animation: pulseOrb3 9s ease-in-out infinite; transform-origin: 600px 200px; }
+    .stream-line { stroke-dasharray: 6 6; animation: dashLine 2.5s linear infinite; }
+    .dyn-bar-1 { animation: barGrow 4s ease-in-out infinite; }
+    .dyn-bar-2 { animation: barGrow2 3.5s ease-in-out infinite; }
+  </style>
+
+  <!-- Solid Background Canvas -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Animated Background Glowing Orbs (Depth Layer) -->
+  <g filter="url(#glow)">
+    <circle class="orb-1" cx="180" cy="90" r="130" fill="#38bdf8" />
+    <circle class="orb-2" cx="1020" cy="310" r="150" fill="#a855f7" />
+    <circle class="orb-3" cx="620" cy="180" r="110" fill="#6366f1" />
+  </g>
+
+  <!-- Technical Grid Background Pattern (Clean Overlay) -->
+  <g stroke="#334155" stroke-opacity="0.25" stroke-width="1">
+    <line x1="0" y1="70" x2="1200" y2="70" />
+    <line x1="0" y1="140" x2="1200" y2="140" />
+    <line x1="0" y1="210" x2="1200" y2="210" />
+    <line x1="0" y1="280" x2="1200" y2="280" />
+    <line x1="0" y1="350" x2="1200" y2="350" />
+    <line x1="150" y1="0" x2="150" y2="420" />
+    <line x1="300" y1="0" x2="300" y2="420" />
+    <line x1="450" y1="0" x2="450" y2="420" />
+    <line x1="600" y1="0" x2="600" y2="420" />
+    <line x1="750" y1="0" x2="750" y2="420" />
+    <line x1="900" y1="0" x2="900" y2="420" />
+    <line x1="1050" y1="0" x2="1050" y2="420" />
+  </g>
+
+  <!-- Outer Border Frame -->
+  <rect width="1196" height="416" x="2" y="2" rx="15" fill="none" stroke="#334155" stroke-width="1.5" stroke-opacity="0.6" />
+
+  <!-- Dynamic Feedback Stream Lines (Subtle Flow at Top/Sides) -->
+  <path class="stream-line" d="M 80 50 Q 300 20 600 50 T 1120 50" fill="none" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="2" />
+  <path class="stream-line" d="M 80 370 Q 400 395 700 370 T 1120 370" fill="none" stroke="#c084fc" stroke-opacity="0.25" stroke-width="2" />
+
+  <!-- ================= FOREGROUND CONTENT ================= -->
+
+  <!-- Top Category Tag -->
+  <g transform="translate(80, 48)">
+    <rect width="280" height="30" rx="15" fill="#1e293b" fill-opacity="0.85" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.5" />
+    <circle cx="16" cy="15" r="5" fill="#38bdf8">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="32" y="20" class="badge-text" fill="#38bdf8" font-size="12">CURATED ECOSYSTEM DIRECTORY</text>
+  </g>
+
+  <!-- Main Hero Title (Guaranteed Foreground Visibility) -->
+  <g transform="translate(80, 130)">
+    <text class="title-text" fill="url(#primaryGrad)">Awesome CSAT &amp; Customer Feedback</text>
+  </g>
+
+  <!-- Subtitle (Clear, readable, high contrast) -->
+  <g transform="translate(80, 172)">
+    <text class="subtitle-text">The Ultimate Guide to Enterprise CX SaaS &amp; Open-Source Feedback Architecture</text>
+  </g>
+
+  <!-- Feature Pills / Highlights -->
+  <g transform="translate(80, 215)">
+    <!-- Pill 1: CSAT & NPS Surveys -->
+    <g transform="translate(0, 0)">
+      <rect width="180" height="34" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1" />
+      <text x="18" y="22" class="badge-text">📊 CSAT, NPS &amp; CES</text>
+    </g>
+
+    <!-- Pill 2: Sentiment Analytics -->
+    <g transform="translate(195, 0)">
+      <rect width="210" height="34" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1" />
+      <text x="18" y="22" class="badge-text">🤖 AI Sentiment &amp; Topics</text>
+    </g>
+
+    <!-- Pill 3: Closed-Loop Action -->
+    <g transform="translate(420, 0)">
+      <rect width="190" height="34" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1" />
+      <text x="18" y="22" class="badge-text">🔄 Closed-Loop Action</text>
+    </g>
+
+    <!-- Pill 4: Open Source -->
+    <g transform="translate(625, 0)">
+      <rect width="220" height="34" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.7" />
+      <text x="18" y="22" class="badge-text" fill="#38bdf8">⚡ Self-Hosted &amp; Open Source</text>
+    </g>
+  </g>
+
+  <!-- Dynamic Dashboard Widget Cards (Bottom Row) -->
+  <g transform="translate(80, 275)">
+    <!-- Card 1: CSAT Score Widget -->
+    <g transform="translate(0, 0)">
+      <rect width="240" height="80" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+      <!-- Star Icon -->
+      <g transform="translate(18, 20)">
+        <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" fill="#f59e0b" />
+      </g>
+      <text x="52" y="36" class="metric-val">94.8% CSAT Score</text>
+      <text x="52" y="54" class="metric-lbl">Benchmark Across 1.2M+ Responses</text>
+    </g>
+
+    <!-- Card 2: Real-time Dynamic Feedback Activity Mini-Chart -->
+    <g transform="translate(260, 0)">
+      <rect width="260" height="80" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+      <text x="18" y="32" class="metric-val">Closed-Loop Resolution</text>
+      <text x="18" y="52" class="metric-lbl">&lt; 2.4 hrs Mean Time To Fix</text>
+      <!-- Dynamic Mini Bar Chart (Animated height/position) -->
+      <g transform="translate(180, 5)">
+        <rect x="0" y="35" width="8" height="35" rx="3" fill="#38bdf8" />
+        <rect class="dyn-bar-1" x="14" y="44" width="8" height="26" rx="3" fill="#818cf8" />
+        <rect class="dyn-bar-2" x="28" y="24" width="8" height="46" rx="3" fill="#c084fc" />
+        <rect x="42" y="18" width="8" height="52" rx="3" fill="#38bdf8">
+          <animate attributeName="height" values="52;40;52" dur="3s" repeatCount="indefinite" />
+          <animate attributeName="y" values="18;30;18" dur="3s" repeatCount="indefinite" />
+        </rect>
+        <rect x="56" y="28" width="8" height="42" rx="3" fill="#22d3ee" />
+      </g>
+    </g>
+
+    <!-- Card 3: Enterprise & Self-Hosted Comparison -->
+    <g transform="translate(540, 0)">
+      <rect width="260" height="80" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+      <text x="18" y="32" class="metric-val">Dual Architecture</text>
+      <text x="18" y="52" class="metric-lbl">Enterprise SaaS &amp; Open-Source AGPL/MIT</text>
+      <!-- Signal Indicator -->
+      <g transform="translate(215, 25)">
+        <circle cx="15" cy="15" r="8" fill="#10b981" fill-opacity="0.3">
+          <animate attributeName="r" values="8;14;8" dur="2s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.6;0;0.6" dur="2s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="15" cy="15" r="5" fill="#10b981" />
+      </g>
+    </g>
+
+    <!-- Card 4: Curated Repository Badge -->
+    <g transform="translate(820, 0)">
+      <rect width="220" height="80" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+      <text x="18" y="32" class="metric-val">100% Curated &amp; Verified</text>
+      <text x="18" y="52" class="metric-lbl">Pricing, Limits &amp; GitHub Stars</text>
+      <!-- Checkmark Icon -->
+      <g transform="translate(180, 28)">
+        <circle cx="12" cy="12" r="12" fill="#6366f1" fill-opacity="0.3" />
+        <path d="M 7 12 L 11 16 L 17 8" fill="none" stroke="#a5b4fc" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+    </g>
+  </g>
+</svg>
