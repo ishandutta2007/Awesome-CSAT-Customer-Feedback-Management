@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-CSAT-Customer-Feedback-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-CSAT-Customer-Feedback-Management?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-CSAT-Customer-Feedback-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-CSAT-Customer-Feedback-Management?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-CSAT-Customer-Feedback-Management/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-CSAT-Customer-Feedback-Management?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-CSAT-Customer-Feedback-Management/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-CSAT-Customer-Feedback-Management?style=flat-square" alt="License" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follo" /></a>
@@ -69,9 +69,9 @@ The following curated SaaS platforms provide hosted survey delivery, real-time a
 
 Self-hosted and open-source feedback platforms give organizations complete control over their customer sentiment data, zero per-response costs, and direct database access. 
 
-The repositories below are **strictly sorted by GitHub star counts in descending order**:
+The repositories below are **strictly sorted by GitHub Stars_Counts in descending order**:
 
-| Project | Star Badge | Description | License / Tech Stack |
+| Project | Stars_Badge | Description | License / Tech Stack |
 |---------|------------|-------------|----------------------|
 | **[PostHog](https://github.com/PostHog/posthog)** 🦔 | [![Stars](https://img.shields.io/github/stars/PostHog/posthog?style=social&color=white)](https://github.com/PostHog/posthog/stargazers) | **Open-source product analytics, session replay, and behavioral satisfaction tracking.** While broader than traditional survey platforms, PostHog serves as the leading open-source engine for behavior-based customer satisfaction measurement (capturing rage clicks, drop-offs, and journey friction that surveys fail to record). | MIT / Python, TypeScript, ClickHouse |
 | **[Formbricks](https://github.com/formbricks/formbricks)** 🧱 | [![Stars](https://img.shields.io/github/stars/formbricks/formbricks?style=social&color=white)](https://github.com/formbricks/formbricks/stargazers) | **The category-defining open-source experience management suite and direct alternative to Qualtrics, Medallia, and Typeform.** Provides link surveys, in-app micro-surveys, and website widgets with granular user attribute targeting. Features 20+ question types (CSAT, NPS, CES, matrix), AI sentiment enrichment, feedback unification (Trustpilot, App Store reviews), and webhook integrations. Unlimited responses with zero per-response SaaS fees. | AGPL-3.0 / Next.js, TypeScript, Tailwind |
@@ -144,7 +144,7 @@ Your sponsorship keeps open-source research independent and up-to-date:
 1. Fork this repository.
 2. Create a descriptive branch (`git checkout -b add-feedback-tool`).
 3. Add or update tools in `README.md` maintaining table formatting, specific starting pricing, and exact free-tier limits.
-4. For open-source entries, include an official GitHub repository link with the required star badge (`style=social&color=white`).
+4. For open-source entries, include an official GitHub repository link with the required Stars_Badge (`style=social&color=white`).
 5. Submit a Pull Request with a short summary of the addition.
 
 ---
